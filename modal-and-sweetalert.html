@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dashboard</title>
+
+<!-- Responsive Meta Tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800,900&display=swap" rel="stylesheet"> 
+    
+<!-- Font Awesome 5 CSS -->
+<link rel="stylesheet" href="css/all.min.css">
+    
+<!-- IcoFonts CSS -->
+<link rel="stylesheet" href="css/icofont.min.css">
+    
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    
+<!-- Custom Scrollbar CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+<!-- Side Menu CSS -->
+<link rel="stylesheet" href="css/sidebar-menu.css">
+    
+<!-- Select 2 CSS -->
+<link rel="stylesheet" href="css/select2.min.css">
+    
+<!-- Data Table CSS -->
+<link rel="stylesheet" href="css/jquery.dataTables.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Colours CSS -->
+<link rel="stylesheet" href="css/colours.css">
+    
+<style>
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > thead > tr > td, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > th, .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr > td{vertical-align: middle; white-space: nowrap;}
+</style>
+    
+</head>
+
+<body>
+
+<div class="loader-bg">
+    <div class="loader-bar"></div>
+</div>
+
+<header>
+<div class="h-left"><a href="index.html"><img src="images/logo.png"></a><span class="nav-icon"><i class="fas fa-bars"></i></span></div>
+<div class="h-right">
+    <div class="dropdown-primary dropdown">
+        <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span>Admin</span>
+        </div>
+        <ul class="profile-dropdown-menu dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+</div>    
+</header>
+
+<div class="side-menu-wrap mCustomScrollbar primary-bg">
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fa fa-tachometer-alt m-icon"></i><span>Dashboard</span></a></li>
+      <li><a href="case-management.html"><i class="fa fa-briefcase m-icon"></i><span>Case Management</span></a></li>
+            
+      <li><a href="#"><i class="fa fa-folder m-icon"></i><span>Administration</span><i class="fas fa-chevron-right"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="organization-setup.html"><i class="fas fa-sitemap m-icon"></i>Organization Setup</a></li>
+          <li><a href="roles.html"><i class="fas fa-user m-icon"></i>Roles</a></li>
+          <li><a href="users.html"><i class="fas fa-users m-icon"></i>Users</a></li>
+          <li><a href="languages.html"><i class="fas fa-globe m-icon"></i>Languages</a></li>
+          <li><a href="audit-logs.html"><i class="fas fa-file-alt m-icon"></i>Audit logs</a></li>
+          <li><a href="subscription-management.html"><i class="fas fa-rss-square m-icon"></i>Subscription</a></li>
+          <li><a href="settings.html"><i class="fas fa-cog m-icon"></i>Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-address-book m-icon"></i><span>Find a Dealer</span></a></li>
+      <li><a href="#"><i class="fa fa-book m-icon"></i><span>Book a Service</span></a></li>
+      <li><a href="#"><i class="fas fa-certificate m-icon"></i><span>Online Warranty</span></a></li>
+      <li><a href="#"><i class="fas fa-file-alt m-icon"></i><span>Documentation</span></a></li>
+      <li><a href="#"><i class="fas fa-bezier-curve m-icon"></i><span>UI Samples</span> <i class="fas fa-chevron-right"></i>
+        </a>
+        <ul class="sidebar-submenu">
+          <li><a href="form.html"><i class="fas fa-file-code m-icon"></i><span>Form</span></a></li>
+          <li><a href="#"><i class="fas fa-table m-icon"></i>Table<i class="fas fa-chevron-right"></i></a>
+            <ul class="sidebar-submenu">
+              <li><a href="simple-tables.html"><i class="far fa-circle m-icon"></i>Simple tables</a></li>
+              <li><a href="data-tables.html"><i class="far fa-circle m-icon"></i>Data tables</a></li>
+            </ul>
+          </li>
+          <li><a href="buttons.html"><i class="fas fa-bold m-icon"></i><span>Buttons</span></a></li>
+          <li><a href="extra.html"><i class="fas fa-layer-group m-icon"></i><span>Extra</span></a></li>
+          <li><a href="treeview.html"><i class="fas fa-folder-open m-icon"></i><span>Tree View</span></a></li>
+          <li><a href="tab-accordian.html"><i class="fas fa-dice-d6 m-icon"></i><span>Tab & Accordian</span></a></li>
+          <li><a href="modal-and-sweetalert.html"><i class="fas fa-dice-d6 m-icon"></i><span>Modal & Sweet Alert</span></a></li>
+          <li><a href="media.html"><i class="fas fa-image m-icon"></i><span>Media</span></a></li>
+              <li><a href="#"> <i class="fa fa-share m-icon"></i><span>Multilevel</span> <i class="fas fa-chevron-right"></i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One <i class="fas fa-chevron-right"></i></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two</a></li>
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two <i class="fas fa-chevron-right"></i></a>
+                        <ul class="sidebar-submenu">
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                </ul>
+              </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="body-spacer">
+  <div class="subheader">
+    <h1>Sweet Alert & Modal</h1>
+  </div>
+    
+  <div class="content-wrap-outer">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+
+          <div class="content-wrap">
+              <div class="card-header">
+                <h5>Sweet Alert</h5>
+              </div>
+              <div class="card-block">
+                  <div class="row">
+                      <div class="col-sm-12 col-md-12">
+                          <button type="button" class="btn btn-success success">Success</button>
+                          <button type="button" class="btn btn-warning warning">Warning</button>
+                          <button type="button" class="btn btn-danger danger">Danger</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="content-wrap">
+              <div class="card-header">
+                  <h5>Modals</h5>
+              </div>
+              <div class="card-block">
+              
+                <!-- Starting Large modal -->
+                <p>add <code>.modal-exl</code> class to show large modal with Table like <code> &lt;div class=&quot;modal-dialog modal-exl&quot;&gt;</code></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-exl">Extra arge modal</button>
+
+                <div class="modal fade bd-example-modal-exl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-exl">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Extra Large  modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            123
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>          
+                <!-- Large modal Ending-->
+                <br><br>
+                <!-- Starting Large modal -->
+                <p>add <code>.modal-lg</code> class to show large modal with icon Table like <code> &lt;div class=&quot;modal-dialog modal-lg&quot;&gt;</code></p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Large modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            123
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Large modal Ending-->
+
+
+                <br><br>
+                <p>Open modal in modal</p>
+                <!-- Modal in Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Multiple Modal  </button>
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                            Launch demo modal
+                        </button>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <p>File uploaded modal in modal</p>
+                <!-- Modal in Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".fileupload"> File Upload Modal</button>
+
+                <div class="modal fade fileupload" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Large modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            123sfgsrgsrfg
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Large modal Ending-->
+
+            </div>
+          </div>
+                     
+           
+        </div>
+      </div>
+  </div>
+</div>
+
+<!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade
+            <br/>to any of the following web browsers to access this website.
+        </p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <i class="fab fa-chrome"></i>
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="fab fa-firefox"></i>
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <i class="fab fa-opera"></i>
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <i class="fab fa-safari"></i>
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="fab fa-internet-explorer"></i>
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+<![endif]--> 
+
+<!-- Main JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+<!-- Bootstrap JS -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Scrollbar JS -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- Side Menu JS -->
+<script src="js/sidebar-menu.js"></script>
+    
+<!-- Select 2 JS -->
+<script src="js/select2.full.min.js"></script>
+    
+<!-- Data Table JS -->
+<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+<!-- FixedColumns Data Table JS -->
+<script type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>
+
+<!-- Tree view JS -->
+<!-- Tree view js -->
+<script src="js/jstree.min.js"></script>
+<script src="js/jquery.tree.js"></script>
+
+<!-- Sweet Alert JS -->
+<script src="js/sweetalert.min.js"></script>
+    
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    $('.bd-example-modal-lg-scroll').on('shown', function () {
+        alert('modal show');  
+    })
+
+$( ".success" ).click(function() {
+  swal("Good job!", "You clicked the button!", "success");
+});
+
+$( ".warning" ).click(function() {
+  swal("Are you sure?", "You clicked the button!", "warning");
+});
+
+$( ".danger" ).click(function() {
+  swal("Error", "You clicked the button!", "error");
+});
+    //$('#myModal').modal('show'); 
+</script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Case Management</title>
+
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 5 CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- IcoFonts CSS -->
+    <link rel="stylesheet" href="css/icofont.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom Scrollbar CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+    <!-- Side Menu CSS -->
+    <link rel="stylesheet" href="css/sidebar-menu.css">
+
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Colours CSS -->
+    <link rel="stylesheet" href="css/colours.css">
+    <link rel="stylesheet" href="css/dropdowntree.css" />
+
+    <style>
+        .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>thead>tr>th,
+        .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>thead>tr>td,
+        .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr>th,
+        .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr>td {
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader-bar"></div>
+    </div>
+
+    <header>
+        <div class="h-left"><a href="index.html"><img src="images/logo.png"></a><span class="nav-icon"><i
+                    class="fas fa-bars"></i></span></div>
+        <div class="h-right">
+            <div class="dropdown-primary dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span>Admin</span>
+                </div>
+                <ul class="profile-dropdown-menu dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                    <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="side-menu-wrap mCustomScrollbar primary-bg">
+        <ul class="sidebar-menu">
+            <li><a href="index.html"><i class="fa fa-tachometer-alt m-icon"></i><span>Dashboard</span></a></li>
+            <li><a href="case-management.html"><i class="fa fa-briefcase m-icon"></i><span>Case Management</span></a>
+            </li>
+
+            <li><a href="#"><i class="fa fa-folder m-icon"></i><span>Administration</span><i
+                        class="fas fa-chevron-right"></i></a>
+                <ul class="sidebar-submenu">
+                    <li><a href="organization-setup.html"><i class="fas fa-sitemap m-icon"></i>Organization Setup</a>
+                    </li>
+                    <li><a href="roles.html"><i class="fas fa-user m-icon"></i>Roles</a></li>
+                    <li><a href="users.html"><i class="fas fa-users m-icon"></i>Users</a></li>
+                    <li><a href="languages.html"><i class="fas fa-globe m-icon"></i>Languages</a></li>
+                    <li><a href="audit-logs.html"><i class="fas fa-file-alt m-icon"></i>Audit logs</a></li>
+                    <li><a href="subscription-management.html"><i class="fas fa-rss-square m-icon"></i>Subscription</a>
+                    </li>
+                    <li><a href="settings.html"><i class="fas fa-cog m-icon"></i>Settings</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-address-book m-icon"></i><span>Find a Dealer</span></a></li>
+            <li><a href="#"><i class="fa fa-book m-icon"></i><span>Book a Service</span></a></li>
+            <li><a href="#"><i class="fas fa-certificate m-icon"></i><span>Online Warranty</span></a></li>
+            <li><a href="#"><i class="fas fa-file-alt m-icon"></i><span>Documentation</span></a></li>
+            <li><a href="#"><i class="fas fa-bezier-curve m-icon"></i><span>UI Samples</span> <i
+                        class="fas fa-chevron-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                    <li><a href="form.html"><i class="fas fa-file-code m-icon"></i><span>Form</span></a></li>
+                    <li><a href="#"><i class="fas fa-table m-icon"></i>Table<i class="fas fa-chevron-right"></i></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="simple-tables.html"><i class="far fa-circle m-icon"></i>Simple tables</a></li>
+                            <li><a href="data-tables.html"><i class="far fa-circle m-icon"></i>Data tables</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="buttons.html"><i class="fas fa-bold m-icon"></i><span>Buttons</span></a></li>
+                    <li><a href="extra.html"><i class="fas fa-layer-group m-icon"></i><span>Extra</span></a></li>
+                    <li><a href="treeview.html"><i class="fas fa-folder-open m-icon"></i><span>Tree View</span></a></li>
+                    <li><a href="tab-accordian.html"><i class="fas fa-dice-d6 m-icon"></i><span>Tab &
+                                Accordian</span></a></li>
+                    <li><a href="modal-and-sweetalert.html"><i class="fas fa-dice-d6 m-icon"></i><span>Modal & Sweet
+                                Alert</span></a></li>
+                    <li><a href="media.html"><i class="fas fa-image m-icon"></i><span>Media</span></a></li>
+                    <li><a href="#"> <i class="fa fa-share m-icon"></i><span>Multilevel</span> <i
+                                class="fas fa-chevron-right"></i></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                            <li><a href="#"><i class="far fa-circle m-icon"></i>Level One <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two</a></li>
+                                    <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two <i
+                                                class="fas fa-chevron-right"></i></a>
+                                        <ul class="sidebar-submenu">
+                                            <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                                            <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body-spacer">
+        <div class="subheader">
+            <h1>View Tickets</h1>
+            <!-- <a href="case-management-details.html" class="btn btn-primary float-right"><i class="fas fa-save"></i>&nbsp; Details</a> -->
+        </div>
+        <div class="content-wrap-outer">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="content-wrap">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                        <div class="form-group">
+                                            <div class="dropdown dropdown-tree" id="firstDropDownTree">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="txtSearchTicketNo"
+                                                name="txtSearchTicketNo" placeholder="Search Ticket No" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="txtSearchTicketInfo"
+                                                name="txtSearchTicketInfo" placeholder="Search Customer Name,Email" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-6">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-primary col-md-12">
+                                                <i class="fas fa-search"></i>&nbsp;Search
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-6">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-danger col-md-12">
+                                                <i class="fas fa-sync-alt"></i>&nbsp;Clear Search
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-block pt-2">
+
+                            <table id="rightfixedcolumn" class="table table-bordered ticket-table" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>Ticket No.</th>
+                                        <th>Assigned To</th>
+                                        <th>Assigned Date</th>
+                                        <th>Status</th>
+                                        <th>Customer Name</th>
+                                        <th>Email</th>
+                                        <th>Contact Number</th>
+                                        <th>Registration Number</th>
+                                        <th>Model</th>
+                                        <th>Chassis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label label-success">In Progress</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label label-danger">Rejected</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label label-warning">Pending</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label label-primary">Open</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label label-info">Info</label></td>                                        
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label btn-light">Closed</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label btn-secondary">Closed</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="case-management-details.html"><i class="fas fa-ticket-alt color-black">&nbsp;&nbsp;</i>TKT1900010</a></td>
+                                        <td>GM</td>
+                                        <td>25 Jul 2019 12:53:05</td>
+                                        <td><label class="label btn-dark">Open</label></td>
+                                        <td>Nimesh bhai</td>
+                                        <td>nimesh@comnet.com.sg</td>
+                                        <td>98765432</td>
+                                        <td>SG 10 IN 7865</td>
+                                        <td>Audi Black</td>
+                                        <td>CH89656</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade
+            <br/>to any of the following web browsers to access this website.
+        </p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <i class="fab fa-chrome"></i>
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="fab fa-firefox"></i>
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <i class="fab fa-opera"></i>
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <i class="fab fa-safari"></i>
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="fab fa-internet-explorer"></i>
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+<![endif]-->
+
+    <!-- Main JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Scrollbar JS -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Side Menu JS -->
+    <script src="js/sidebar-menu.js"></script>
+
+    <!-- Select 2 JS -->
+    <script src="js/select2.full.min.js"></script>
+
+    <!-- Data Table JS -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+    <!-- FixedColumns Data Table JS -->
+    <script type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>
+
+    <!-- Tree view JS -->
+    <script src="js/jstree.min.js"></script>
+    <script src="js/jquery.tree.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/dropdowntree.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        $("#case-management tr").click(function () {
+            // window.location = "case-management-details.html";
+            window.open('case-management-details.html', '_blank');
+        });
+    </script>
+    <script>
+        /////////////////////////// normal user code
+
+        var arr4 = [{title: "CSL",href: "#1",dataAttrs: [{title: "dataattr1",data: "value1"}, {title: "dataattr2",data: "value2"}, {title: "dataattr3",data: "value3"}]},
+                    {title: "Daman Sara",href: "#2",dataAttrs: [{title: "dataattr4",data: "value4"}, {title: "dataattr5",data: "value5"}, {title: "dataattr6",data: "value6"}]},
+                    {title: "GM",href: "#3",dataAttrs: [{title: "dataattr7",data: "value7"}, {title: "dataattr8",data: "value8"}, {title: "dataattr9",data: "value9"}]},
+                    {title: "JB",href: "#3",dataAttrs: [{title: "dataattr7",data: "value7"}, {title: "dataattr8",data: "value8"}, {title: "dataattr9",data: "value9"}]}
+        ];
+        var arr22 = [{title: "Aftersales Service",href: "#1",dataAttrs: [{title: "dataattr1",data: "value1"}, {title: "dataattr2",data: "value2"}, {title: "dataattr3",data: "value3"}]},
+                    {title: "Marketing",href: "#2",dataAttrs: [{title: "dataattr4",data: "value4"}, {title: "dataattr5",data: "value5"}, {title: "dataattr6",data: "value6"}]},
+                    {title: "Sales",href: "#3",dataAttrs: [{title: "dataattr7",data: "value7"}, {title: "dataattr8",data: "value8"}, {title: "dataattr9",data: "value9"}]}
+        ];
+
+        var arr3 = [{title: "EM",href: "#2",dataAttrs: [{title: "dataattr4",data: "value4"}, {title: "dataattr5",data: "value5"}, {title: "dataattr6",data: "value6"}],data: arr4}
+        ];
+        var arr21 =[{title: "PAL",href: "#2",dataAttrs: [{title: "dataattr4",data: "value4"}, {title: "dataattr5",data: "value5"}, {title: "dataattr6",data: "value6"}],data: arr22}]
+
+        var arr2 = [{title: "AM",href: "#1",dataAttrs: [{title: "dataattr1",data: "value1"}, {title: "dataattr2",data: "value2"}, {title: "dataattr3",data: "value3"}],data: arr3},
+                    {title: "PAL",href: "#1",dataAttrs: [{title: "dataattr1",data: "value1"}, {title: "dataattr2",data: "value2"}, {title: "dataattr3",data: "value3"}],data: arr21},
+                    {title: "BR",href: "#2",dataAttrs: [{title: "dataattr4",data: "value4"}, {title: "dataattr5",data: "value5"}, {title: "dataattr6",data: "value6"}]},
+                    {title: "PH",href: "#3",dataAttrs: [{title: "dataattr7",data: "value7"}, {title: "dataattr8",data: "value8"}, {title: "dataattr9",data: "value9"}]}
+        ];
+
+
+
+        var arr = [{title: "ASAP",href: "#1",dataAttrs: [{title: "dataattr1",data: "value1"}, {title: "dataattr2",data: "value2"}, {title: "dataattr3",data: "value3"}],data: arr2},
+        ];
+
+
+
+        var options = {
+        title : "Filter by Level",
+        data: arr,
+        maxHeight: 300,
+        clickHandler: function(element){
+            //gets clicked element parents
+            console.log($(element).GetParents());
+            //element is the clicked element
+            console.log(element);
+            $("#firstDropDownTree").SetTitle($(element).find("a").first().text());
+            console.log("Selected Elements",$("#firstDropDownTree").GetSelected());
+        },
+        expandHandler: function(element,expanded){
+            console.log("expand",element,expanded);
+        },
+        checkHandler: function(element,checked){
+            console.log("check",element,checked);
+        },
+        closedArrow: '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        openedArrow: '<i class="fa fa-caret-down" aria-hidden="true"></i>',
+        multiSelect: false,
+        selectChildren: false,
+        addChildren:false
+    }
+
+    $("#firstDropDownTree").DropDownTree(options);
+
+    </script>
+</body>
+
+</html>

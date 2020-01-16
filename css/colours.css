@@ -1,0 +1,88 @@
+.bg-image{background-image:url(../images/login-bg.jpg);}
+
+/*** Global CSS For Text Colours START ***/
+.primary-color,
+.checkbox-fade.fade-in-primary .cr .cr-icon,
+.btn-link,
+.btn-link:hover,
+.breadcrumb li a:hover,
+.nav-icon,
+.close:hover,
+.file-list .folder-root:before,
+.nav.nav-tabs a,
+.alert.alert-primary,
+.label-inverse-primary{color:#000;}
+/*** Global CSS For Text Colours END ***/
+
+/*** Global CSS For Background Colours START ***/
+.primary-bg,
+.loader-bg .loader-bar,
+.label-primary,
+.primary-box,
+.switch.switch-primary input:checked + .switch-slider,
+.radio.radio-primary .helper:after,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{background:#000;}
+/*** Global CSS For Background Colours END ***/
+
+/*** Global CSS For Border Colours START ***/
+.switch.switch-primary input:checked + .switch-slider,
+.radio.radio-primary .helper:after,
+.radio.radio-primary .helper:before,
+.checkbox-fade.fade-in-primary .cr,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.alert.alert-primary,
+.label-inverse-primary{border-color:#000;}
+/*** Global CSS For Border Colours  END ***/
+
+/*** Global CSS For Primary Button START ***/
+.btn-primary,
+.alert.background-primary,
+.page-item.active .page-link,
+.page-item .page-link:hover{color:#ffffff; background-color:#000; border-color:#000;}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle{color:#ffffff; background-color:#3e3e3e; border-color:#3e3e3e;}
+
+.btn-primary.focus, 
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 0.2rem rgb(0, 0, 0, 0.5);}
+
+.btn-outline-primary{color:#000; border-color:#000;}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active, 
+.btn-outline-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-outline-primary.dropdown-toggle{color:#ffffff; background-color:#000; border-color:#000;}
+
+.btn-outline-primary.focus, 
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-outline-primary.dropdown-toggle:focus{box-shadow:0 0 0 0.2rem rgb(0, 0, 0, 0.5);}
+/*** Global CSS For Primary Button END ***/
+
+.sidebar-menu > li > .sidebar-submenu {
+    background: rgb(29, 29, 29);
+}
+.sidebar-menu .sidebar-submenu > li.active > a, .sidebar-menu .sidebar-submenu > li > a:hover, .sidebar-menu .sidebar-submenu > li.current-active > a {
+    color: #000 !important;
+    background: #fff;
+}
+
+/* .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a, .sidebar-menu > li.pcoded-trigger > a, .sidebar-submenu > li.pcoded-trigger > a {
+    color: #ffffff !important;
+    background: #36a2ec;
+    border-left-color: #000000;
+} */

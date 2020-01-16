@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 5 CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- IcoFonts CSS -->
+    <link rel="stylesheet" href="css/icofont.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom Scrollbar CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+    <!-- Side Menu CSS -->
+    <link rel="stylesheet" href="css/sidebar-menu.css">
+
+    <!-- Select 2 CSS -->
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+
+    <!-- Date and Time Picker CSS -->
+    <link rel='stylesheet' href='css/bootstrap-datetimepicker.min.css'>
+
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Colours CSS -->
+    <link rel="stylesheet" href="css/colours.css">
+
+</head>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader-bar"></div>
+    </div>
+
+    <header>
+        <div class="h-left"><a href="index.html"><img src="images/logo.png"></a><span class="nav-icon"><i
+                    class="fas fa-bars"></i></span></div>
+        <div class="h-right">
+            <div class="dropdown-primary dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span>Admin</span>
+                </div>
+                <ul class="profile-dropdown-menu dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                    <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="side-menu-wrap mCustomScrollbar primary-bg">
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fa fa-tachometer-alt m-icon"></i><span>Dashboard</span></a></li>
+      <li><a href="case-management.html"><i class="fa fa-briefcase m-icon"></i><span>Case Management</span></a></li>
+            
+      <li><a href="#"><i class="fa fa-folder m-icon"></i><span>Administration</span><i class="fas fa-chevron-right"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="organization-setup.html"><i class="fas fa-sitemap m-icon"></i>Organization Setup</a></li>
+          <li><a href="roles.html"><i class="fas fa-user m-icon"></i>Roles</a></li>
+          <li><a href="users.html"><i class="fas fa-users m-icon"></i>Users</a></li>
+          <li><a href="languages.html"><i class="fas fa-globe m-icon"></i>Languages</a></li>
+          <li><a href="audit-logs.html"><i class="fas fa-file-alt m-icon"></i>Audit logs</a></li>
+          <li><a href="subscription-management.html"><i class="fas fa-rss-square m-icon"></i>Subscription</a></li>
+          <li><a href="settings.html"><i class="fas fa-cog m-icon"></i>Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-address-book m-icon"></i><span>Find a Dealer</span></a></li>
+      <li><a href="#"><i class="fa fa-book m-icon"></i><span>Book a Service</span></a></li>
+      <li><a href="#"><i class="fas fa-certificate m-icon"></i><span>Online Warranty</span></a></li>
+      <li><a href="#"><i class="fas fa-file-alt m-icon"></i><span>Documentation</span></a></li>
+      <li><a href="#"><i class="fas fa-bezier-curve m-icon"></i><span>UI Samples</span> <i class="fas fa-chevron-right"></i>
+        </a>
+        <ul class="sidebar-submenu">
+          <li><a href="form.html"><i class="fas fa-file-code m-icon"></i><span>Form</span></a></li>
+          <li><a href="#"><i class="fas fa-table m-icon"></i>Table<i class="fas fa-chevron-right"></i></a>
+            <ul class="sidebar-submenu">
+              <li><a href="simple-tables.html"><i class="far fa-circle m-icon"></i>Simple tables</a></li>
+              <li><a href="data-tables.html"><i class="far fa-circle m-icon"></i>Data tables</a></li>
+            </ul>
+          </li>
+          <li><a href="buttons.html"><i class="fas fa-bold m-icon"></i><span>Buttons</span></a></li>
+          <li><a href="extra.html"><i class="fas fa-layer-group m-icon"></i><span>Extra</span></a></li>
+          <li><a href="treeview.html"><i class="fas fa-folder-open m-icon"></i><span>Tree View</span></a></li>
+          <li><a href="tab-accordian.html"><i class="fas fa-dice-d6 m-icon"></i><span>Tab & Accordian</span></a></li>
+          <li><a href="modal-and-sweetalert.html"><i class="fas fa-dice-d6 m-icon"></i><span>Modal & Sweet Alert</span></a></li>
+          <li><a href="media.html"><i class="fas fa-image m-icon"></i><span>Media</span></a></li>
+              <li><a href="#"> <i class="fa fa-share m-icon"></i><span>Multilevel</span> <i class="fas fa-chevron-right"></i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One <i class="fas fa-chevron-right"></i></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two</a></li>
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two <i class="fas fa-chevron-right"></i></a>
+                        <ul class="sidebar-submenu">
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                </ul>
+              </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+    <div class="body-spacer">
+        <div class="subheader">
+            <h1>Forms</h1>
+        </div>
+        <div class="content-wrap-outer">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Forms Input</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <label>Label Title</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="form-group">
+                                            <label>Label Title</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                            <div class="form-group">
+                                                <label class="w-100 d-none d-md-block">&nbsp;</label>
+                                                <button type="button" class="btn btn-primary mb-2">Submit</button>
+                                                <button type="button" class="btn btn-danger mb-2">Cancel</button>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="content-wrap">
+                <div class="card-header">
+                  <h5>Date and Time Picker</h5>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <label>Time Picker</label>
+                                <input type="text" class="timepicker" id="timepicker"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <label>Date Picker</label>
+                                <input type="text" class="datepicker" id="datepicker">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="content-wrap">
+                <div class="card-header">
+                    <h5>Date and Time Picker</h5>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <div class="input-group">                                            
+                                    <span class="input-group-append input-group-addon date-icon">
+                                        <input class="form-control datepicker" type="text"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="form-group">
+                                <label>Time</label>
+                                <div class="input-group">
+                                    <span class="input-group-append input-group-addon time-icon">
+                                        <input class="form-control timepicker" type="text"/>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrap">
+                    <div class="card-header">
+                        <h5>Range Date Picker</h5>
+                    </div>
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label>Range Date Picker</label>
+                                    <div class="input-group">                                            
+                                        <span class="input-group-append input-group-addon date-icon">
+                                            <input class="form-control daterange" type="text" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label>Range Date And Time Picker</label>
+                                    <div class="input-group">                                            
+                                        <span class="input-group-append input-group-addon date-icon">
+                                            <input class="form-control datetimes" type="text" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Select Menu Options</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Select Menu With Search</label>
+                                        <select class="js-example-basic-single" name="state" style="width:100%;">
+                                            <option value="AL">Active</option>
+                                            <option value="WY">InActive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Multiple Select Menu</label>
+                                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                                            style="width: 100%;">
+                                            <option value="AL">One</option>
+                                            <option value="WY">Two</option>
+                                            <option value="WY">Three</option>
+                                            <option value="WY">Four</option>
+                                            <option value="WY">Five</option>
+                                            <option value="WY">Six</option>
+                                            <option value="WY">Seven</option>
+                                            <option value="WY">Eight</option>
+                                            <option value="WY">Nine</option>
+                                            <option value="WY">Ten</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Image Picker</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-md-5">
+                                    <div class="form-group">
+                                        <label class="w-100">Single Image</label>
+                                        <span class="btn btn-secondary btn-file choose-style">
+                                            choose File <input type="file">
+                                        </span>
+                                        <div class="img-width-style">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7">
+                                    <div class="form-group">
+                                        <label class="w-100">Multiple Images</label>
+                                        <span class="btn btn-secondary btn-file choose-style">
+                                            choose File <input type="file">
+                                        </span>
+                                        <div class="img-width-style table-top">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                        <div class="img-width-style table-top">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                        <div class="img-width-style table-top">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                        <div class="img-width-style table-top">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                        <div class="img-width-style table-top">
+                                            <img src="images/no-image.png" width="75" />
+                                            <span class="closed-img"><a href="#"><i
+                                                        class="fas fa-times-circle"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Image Picker</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Single Image</label>
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="file-select-button" id="fileName">Choose File</div>
+                                                <div class="file-select-name" id="noFile">No file chosen...</div>
+                                                <input type="file" name="chooseFile" id="chooseFile" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="form-group">
+                                        <label>Images upload</label>
+                                        <div class="file-upload">
+                                            <div class="file-select file-choose-btn">
+                                                <div class="file-select-button" id="fileName">Choose File</div>
+                                                <div class="file-select-name" id="noFile">No file chosen...</div>
+                                                <input type="file" name="chooseFile" id="chooseFile" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Radio Button</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+
+                                    <div class="radio radio-default radio-inline mb-2"><label><input type="radio"
+                                                name="radio" checked="checked"><i class="helper"></i>Default</label>
+                                    </div>
+                                    <div class="radio radio-primary radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Primary</label></div>
+                                    <div class="radio radio-secondary radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Secondary</label></div>
+                                    <div class="radio radio-warning radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Warning</label></div>
+                                    <div class="radio radio-success radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Success</label></div>
+                                    <div class="radio radio-info radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Info</label></div>
+                                    <div class="radio radio-danger radio-inline mb-2"><label><input type="radio"
+                                                name="radio"><i class="helper"></i>Danger</label></div>
+                                    <div class="radio radio-inline radio-disable mb-2"><label><input type="radio"
+                                                name="radio" disabled><i class="helper"></i>Radio Disable</label></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Checkbox</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+
+                                    <div class="checkbox-fade fade-in-default mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-default"></i></span><span>Default</span></label>
+                                    </div>
+                                    <div class="checkbox-fade fade-in-primary mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-primary"></i></span><span>Primary</span></label>
+                                    </div>
+                                    <div class="checkbox-fade fade-in-secondary mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-secondary"></i></span><span>Secondary</span></label>
+                                    </div>
+                                    <div class="checkbox-fade fade-in-warning mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-warning"></i></span><span>
+                                                Warning</span></label></div>
+                                    <div class="checkbox-fade fade-in-success mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-success"></i></span><span>Success</span></label>
+                                    </div>
+                                    <div class="checkbox-fade fade-in-info mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-info"></i></span><span>
+                                                Info</span></label></div>
+                                    <div class="checkbox-fade fade-in-danger mb-2"><label><input type="checkbox"
+                                                value=""><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check txt-danger"></i></span><span>
+                                                Danger</span></label></div>
+                                    <div class="checkbox-fade fade-in-disable mb-2"><label><input type="checkbox"
+                                                value="" disabled><span class="cr"><i
+                                                    class="cr-icon icofont icofont-ui-check text-default"></i></span><span>Disabled</span></label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Switches</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label class="switch switch-primary"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch switch-default"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch switch-warning"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch switch-success"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch switch-info"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch switch-danger"><input type="checkbox" checked><span
+                                                class="switch-slider"></span></label>
+                                        <label class="switch"><input type="checkbox" disabled><span
+                                                class="switch-slider"></span></label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="switch small-switch switch-primary"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch switch-default"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch switch-warning"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch switch-success"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch switch-info"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch switch-danger"><input type="checkbox"
+                                                checked><span class="switch-slider"></span></label>
+                                        <label class="switch small-switch"><input type="checkbox" disabled><span
+                                                class="switch-slider"></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   <div class="content-wrap">
+                        <div class="card-header">
+                            <h5>Wizard Step up</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <!-- MultiStep Form -->
+
+                                        <div class="stepwizard">
+                                            <div class="stepwizard-row setup-panel">
+                                                <div class="stepwizard-step col-xs-3"> 
+                                                    <a href="#step-1" class="btn btn-secondary btn-success">1</a>
+                                                    <p><small>Shipper</small></p>
+                                                </div>
+                                                <div class="stepwizard-step col-xs-3"> 
+                                                    <a href="#step-2" class="btn btn-secondary">2</a>
+                                                    <p><small>Destination</small></p>
+                                                </div>
+                                                <div class="stepwizard-step col-xs-3"> 
+                                                    <a href="#step-3" class="btn btn-secondary">3</a>
+                                                    <p><small>Schedule</small></p>
+                                                </div>
+                                                <div class="stepwizard-step col-xs-3"> 
+                                                    <a href="#step-4" class="btn btn-secondary">4</a>
+                                                    <p><small>Cargo</small></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <form role="form">
+                                            <div class="panel panel-primary setup-content wizard-panel" id="step-1">
+                                                <div class="panel-heading">
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="control-label">First Name</label>
+                                                        <input maxlength="100" type="text" class="form-control" placeholder="Enter First Name" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Last Name</label>
+                                                        <input maxlength="100" type="text" class="form-control" placeholder="Enter Last Name" />
+                                                    </div>
+                                                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel panel-primary setup-content wizard-panel" id="step-2">
+                                                <div class="panel-heading">
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Company Name</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Name" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Company Address</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Address" />
+                                                    </div>
+                                                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel panel-primary setup-content wizard-panel" id="step-3">
+                                                <div class="panel-heading">
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="control-label">First Name</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Name" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Last Name</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Address" />
+                                                    </div>
+                                                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel panel-primary setup-content wizard-panel" id="step-4">
+                                                <div class="panel-heading">
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Company Name</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Name" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Company Address</label>
+                                                        <input maxlength="200" type="text" class="form-control" placeholder="Enter Company Address" />
+                                                    </div>
+                                                    <button class="btn btn-success pull-right" type="submit">Finish!</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                  
+                                    <!-- /.MultiStep Form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade
+            <br/>to any of the following web browsers to access this website.
+        </p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <i class="fab fa-chrome"></i>
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="fab fa-firefox"></i>
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <i class="fab fa-opera"></i>
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <i class="fab fa-safari"></i>
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="fab fa-internet-explorer"></i>
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+<![endif]-->
+
+    <!-- Main JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- moment js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Scrollbar JS -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Side Menu JS -->
+    <script src="js/sidebar-menu.js"></script>
+
+    <!-- Select 2 JS -->
+    <script src="js/select2.full.min.js"></script>
+
+    <!-- Data Table JS -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+    <!-- Date and Time Picker JS -->
+    <script src='js/bootstrap-datetimepicker.min.js'></script>
+
+    <!-- Date Range Picker -->
+    <script type="text/javascript" src="js/daterangepicker.min.js"></script>
+
+    <!-- Custom Chart Js -->
+    <!-- <script src="js/custom-chart.js"></script> -->
+
+    <!-- Time picker -->
+    <script src="js/timepicki.js"></script>
+    
+    <!-- Tree view js -->
+    <script src="js/jstree.min.js"></script>
+    <script src="js/jquery.tree.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+
+        // Date Range Picker
+
+        $(function() {
+            $('.daterange').daterangepicker({
+                opens: 'left'
+            }, function(start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+
+        
+        // Date Picker Only
+
+        $(function() {
+            $('.datepicker').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'),10)
+            });
+        });
+
+
+        // Date And Time Picker
+
+        $(function() {
+            $('.datetimes').daterangepicker({
+                timePicker: true,
+                startDate: moment().startOf('hour'),
+                endDate: moment().startOf('hour').add(32, 'hour'),
+                locale: {
+                format: 'M/DD hh:mm A'
+                }
+            });
+        });
+
+
+        // Time Picker Only
+
+        $('.timepicker').timepicki();
+
+    </script>
+
+</body>
+
+</html>

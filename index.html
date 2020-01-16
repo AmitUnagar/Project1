@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Audi-Customer-Car</title>
+
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 5 CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- IcoFonts CSS -->
+  <link rel="stylesheet" href="css/icofont.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom Scrollbar CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+  <!-- Side Menu CSS -->
+  <link rel="stylesheet" href="css/sidebar-menu.css">
+
+  <!-- Select 2 CSS -->
+  <link rel="stylesheet" href="css/select2.min.css">
+
+  <!-- Data Table CSS -->
+  <link rel="stylesheet" href="css/jquery.dataTables.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Colours CSS -->
+  <link rel="stylesheet" href="css/colours.css">
+
+</head>
+
+<body>
+
+  <div class="loader-bg">
+    <div class="loader-bar"></div>
+  </div>
+
+  <header>
+    <div class="h-left"><a href="index.html"><img src="images/logo.png"></a><span class="nav-icon"><i
+          class="fas fa-bars"></i></span></div>
+    <div class="h-right">
+      <div class="dropdown-primary dropdown">
+        <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span>Admin</span>
+        </div>
+        <ul class="profile-dropdown-menu dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+          <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="side-menu-wrap mCustomScrollbar primary-bg">
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fa fa-tachometer-alt m-icon"></i><span>Dashboard</span></a></li>
+      <li><a href="case-management.html"><i class="fa fa-briefcase m-icon"></i><span>Case Management</span></a></li>
+
+      <li><a href="#"><i class="fa fa-folder m-icon"></i><span>Administration</span><i
+            class="fas fa-chevron-right"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="organization-setup.html"><i class="fas fa-sitemap m-icon"></i>Organization Setup</a></li>
+          <li><a href="roles.html"><i class="fas fa-user m-icon"></i>Roles</a></li>
+          <li><a href="users.html"><i class="fas fa-users m-icon"></i>Users</a></li>
+          <li><a href="languages.html"><i class="fas fa-globe m-icon"></i>Languages</a></li>
+          <li><a href="audit-logs.html"><i class="fas fa-file-alt m-icon"></i>Audit logs</a></li>
+          <li><a href="subscription-management.html"><i class="fas fa-rss-square m-icon"></i>Subscription</a></li>
+          <li><a href="settings.html"><i class="fas fa-cog m-icon"></i>Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-address-book m-icon"></i><span>Find a Dealer</span></a></li>
+      <li><a href="#"><i class="fa fa-book m-icon"></i><span>Book a Service</span></a></li>
+      <li><a href="#"><i class="fas fa-certificate m-icon"></i><span>Online Warranty</span></a></li>
+      <li><a href="#"><i class="fas fa-file-alt m-icon"></i><span>Documentation</span></a></li>
+      <li><a href="#"><i class="fas fa-bezier-curve m-icon"></i><span>UI Samples</span> <i
+            class="fas fa-chevron-right"></i>
+        </a>
+        <ul class="sidebar-submenu">
+          <li><a href="form.html"><i class="fas fa-file-code m-icon"></i><span>Form</span></a></li>
+          <li><a href="#"><i class="fas fa-table m-icon"></i>Table<i class="fas fa-chevron-right"></i></a>
+            <ul class="sidebar-submenu">
+              <li><a href="simple-tables.html"><i class="far fa-circle m-icon"></i>Simple tables</a></li>
+              <li><a href="data-tables.html"><i class="far fa-circle m-icon"></i>Data tables</a></li>
+            </ul>
+          </li>
+          <li><a href="buttons.html"><i class="fas fa-bold m-icon"></i><span>Buttons</span></a></li>
+          <li><a href="extra.html"><i class="fas fa-layer-group m-icon"></i><span>Extra</span></a></li>
+          <li><a href="treeview.html"><i class="fas fa-folder-open m-icon"></i><span>Tree View</span></a></li>
+          <li><a href="tab-accordian.html"><i class="fas fa-dice-d6 m-icon"></i><span>Tab & Accordian</span></a></li>
+          <li><a href="modal-and-sweetalert.html"><i class="fas fa-dice-d6 m-icon"></i><span>Modal & Sweet
+                Alert</span></a></li>
+          <li><a href="media.html"><i class="fas fa-image m-icon"></i><span>Media</span></a></li>
+          <li><a href="#"> <i class="fa fa-share m-icon"></i><span>Multilevel</span> <i
+                class="fas fa-chevron-right"></i></a>
+            <ul class="sidebar-submenu">
+              <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+              <li><a href="#"><i class="far fa-circle m-icon"></i>Level One <i class="fas fa-chevron-right"></i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two</a></li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two <i class="fas fa-chevron-right"></i></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="body-spacer">
+    <div class="subheader">
+      <h1>Dashboard</h1>
+    </div>
+
+    <div class="content-wrap-outer">
+      <div class="row">
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="dash-section-pdz">
+            <div class="row">
+              <div class="dashboard-head">
+                <h3>You are viewing information for the following</h3>
+              </div>
+            </div>
+            <div class="row">
+
+              <div class="main-dasboard">
+
+                <div class="form-group dealer-group">
+                  <label>Dealer Group</label>
+                  <select class="js-example-basic-single" name="state" style="width:100%;">
+                    <option value="">Euromobile Sdn. Bhd.</option>
+                    <option value="">Euromobile Sdn. Bhd-1</option>
+                    <option value="">Euromobile Sdn. Bhd-2</option>
+                    <option value="">Euromobile Sdn. Bhd-3</option>
+                    <option value="">Euromobile Sdn. Bhd-4</option>
+                    <option value="">Euromobile Sdn. Bhd-5</option>
+                  </select>
+                </div>
+
+                <div class="form-group dealer-group">
+                  <label>Dealer</label>
+                  <select class="js-example-basic-single" name="state" style="width:100%;">
+                    <option value="AL">Audi Johor Bahru</option>
+                    <option value="WY">Audi Johor Bahru-1</option>
+                    <option value="WY">Audi Johor Bahru-2</option>
+                    <option value="WY">Audi Johor Bahru-3</option>
+                    <option value="WY">Audi Johor Bahru-4</option>
+                    <option value="WY">Audi Johor Bahru-5</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>&nbsp;</label>
+                  <button type="button" class="btn generated-btn w-100" data-toggle="tooltip" data-placement="top"
+                    title="" data-original-title="Generate Dashboard"><i class="far fa-chart-bar"></i></button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="row justiy-end">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 dashboard-height">
+              <div class="content-wrap dash-pdz align-items-center ">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-3">
+                    <span class="number-style">4</span>                    
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-9 align-items-center ">
+                    <ul class="dash-ui">
+                      <li class="box-dash-text">New Tickets<br/>Today</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 dashboard-height">
+              <div class="content-wrap dash-pdz align-items-center d-flex">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-3">
+                      <span class="number-style">0</span>  
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-9 align-items-center d-flex justify-content-end">
+                    <ul class="dash-ui">
+                      <li class="box-dash-text">Complaints Today</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class=" content-wrap lable-ticket">
+              <div class="row mt-5">
+                <div class="col-md-5 text-center offset-md-1">
+                  <div class="card p-3">
+                    <strong> Open Tickets :</strong> <label class="lable-ticket">132 456</label>
+                  </div>
+                </div>
+                <div class="col-md-5  text-center">
+                  <div class="card p-3">
+                    <strong>Close Tickets : </strong> <label class="lable-ticket">123</label>
+                  </div>
+                </div>
+                <div class="col-md-10 offset-md-1 text-center mt-4 mb-5">
+                    <div class="card p-3 card-footer justify-content-center">
+                    <strong> Total Ration : </strong> 
+                    <span> 1235</span>
+              </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class=" content-wrap lable-ticket">
+                <div class="row mt-5">
+                  <div class="col-md-5 text-center offset-md-1">
+                    <div class="card p-3">
+                      <strong> Open Tickets :</strong> <label class="lable-ticket">132 456</label>
+                    </div>
+                  </div>
+                  <div class="col-md-5  text-center">
+                    <div class="card p-3">
+                      <strong>Close Tickets : </strong> <label class="lable-ticket">123</label>
+                    </div>
+                  </div>
+                  <div class="col-md-10 offset-md-1 text-center mt-4 mb-5">
+                      <div class="card p-3 card-footer justify-content-center">
+                      <strong> Total Ration : </strong> 
+                      <span> 1235</span>
+                </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+       
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-wrap">
+            <div class="card-header">
+              <h5>Tickets Open</h5>
+              <div class="chart-drop">
+                <select class="" name="state">
+                  <option value="AL">Part Department</option>
+                  <option value="WY">Part Department-1</option>
+                  <option value="WY">Part Department-2</option>
+                  <option value="WY">Part Department-3</option>
+                  <option value="WY">Part Department-4</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div class=""></div>
+                </div>
+              </div>
+              <canvas id="TicketsOpen" width="448" height="224" class="chartjs-render-monitor"
+                style="display: block; width: 448px; height: 224px;"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-wrap">
+            <div class="card-header">
+              <h5>Tickets Closed</h5>
+              
+              
+              <div class="chart-drop">
+                <select class="" name="state">
+                  <option value="AL">Part Department</option>
+                  <option value="WY">Part Department-1</option>
+                  <option value="WY">Part Department-2</option>
+                  <option value="WY">Part Department-3</option>
+                  <option value="WY">Part Department-4</option>
+                </select>
+              </div>
+              <div class="month-style">
+                  <span><a href="#" class="month-active">This Month</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span><a href="#">Last Month</a></span>
+                </div>
+            </div>
+            <div class="card-block">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div class=""></div>
+                </div>
+              </div>
+              <canvas id="TicketsClosed" width="448" height="224" class="chartjs-render-monitor"
+                style="display: block; width: 448px; height: 224px;"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-wrap">
+            <div class="card-header">
+              <h5>Tickets by Car Model</h5>
+              <div class="chart-drop">
+                <select class="" name="state">
+                  <option value="AL">A3</option>
+                  <option value="WY">A4</option>
+                  <option value="WY">A5</option>
+                  <option value="WY">A6</option>
+                  <option value="WY">A7</option>
+                  <option value="AL">A8</option>
+                  <option value="WY">Q2</option>
+                  <option value="WY">Q3</option>
+                  <option value="WY">Q5</option>
+                  <option value="WY">Q7</option>
+                  <option value="AL">Q8</option>
+                  <option value="WY">TT</option>
+                  <option value="WY">R8</option>
+                  <option value="WY">e-tron</option>
+                </select>
+              </div>
+              <div class="chart-drop">
+                <select class="" name="state">
+                  <option value="AL">Jul 19</option>
+                  <option value="WY">Jun 19</option>
+                  <option value="WY">May 19</option>
+                  <option value="WY">Apr 19</option>
+                  <option value="WY">Mar 19</option>
+                  <option value="AL">Feb 19</option>
+                  <option value="WY">Jan 19</option>
+                  <option value="WY">Dec 19</option>
+                  <option value="WY">Nov 19</option>
+                  <option value="WY">Oct 19</option>
+                  <option value="WY">Sep 19</option>
+                  <option value="WY">Aug 19</option>
+                  <option value="WY">Last 12 Months</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="card-block">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div class=""></div>
+                </div>
+              </div>
+              <canvas id="Complaints" width="448" height="224" class="chartjs-render-monitor"
+                style="display: block; width: 448px; height: 224px;"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-wrap">
+            <div class="card-header">
+              <h5>Repeat Repair</h5>
+              <div class="chart-drop">
+                <select class="" name="state">
+                    <option value="AL">A3</option>
+                    <option value="WY">A4</option>
+                    <option value="WY">A5</option>
+                    <option value="WY">A6</option>
+                    <option value="WY">A7</option>
+                    <option value="AL">A8</option>
+                    <option value="WY">Q2</option>
+                    <option value="WY">Q3</option>
+                    <option value="WY">Q5</option>
+                    <option value="WY">Q7</option>
+                    <option value="AL">Q8</option>
+                    <option value="WY">TT</option>
+                    <option value="WY">R8</option>
+                    <option value="WY">e-tron</option>
+                </select>
+              </div>
+              <div class="chart-drop">
+                <select class="" name="state">
+                    <option value="AL">Jul 19</option>
+                    <option value="WY">Jun 19</option>
+                    <option value="WY">May 19</option>
+                    <option value="WY">Apr 19</option>
+                    <option value="WY">Mar 19</option>
+                    <option value="AL">Feb 19</option>
+                    <option value="WY">Jan 19</option>
+                    <option value="WY">Dec 19</option>
+                    <option value="WY">Nov 19</option>
+                    <option value="WY">Oct 19</option>
+                    <option value="WY">Sep 19</option>
+                    <option value="WY">Aug 19</option>
+                    <option value="WY">Last 12 Months</option>
+                </select>
+              </div>
+            </div>
+            <div class="card-block">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div class=""></div>
+                </div>
+              </div>
+              <canvas id="RepeatRepair" width="448" height="224" class="chartjs-render-monitor"
+                style="display: block; width: 448px; height: 224px;"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade
+            <br/>to any of the following web browsers to access this website.
+        </p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <i class="fab fa-chrome"></i>
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="fab fa-firefox"></i>
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <i class="fab fa-opera"></i>
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <i class="fab fa-safari"></i>
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="fab fa-internet-explorer"></i>
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+<![endif]-->
+
+
+  <!-- Main JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Custom Scrollbar JS -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <!-- Side Menu JS -->
+  <script src="js/sidebar-menu.js"></script>
+
+  <!-- Select 2 JS -->
+  <script src="js/select2.full.min.js"></script>
+
+  <!-- Data Table JS -->
+  <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+
+  <!-- FixedColumns Data Table JS -->
+  <script type="text/javascript" src="js/dataTables.fixedColumns.min.js"></script>
+
+  <!-- chart js -->
+  <script src="js/chart.js@2.8.0.js"></script>
+
+  <!-- Custom Chart Js -->
+  <script src="js/custom-chart.js"></script>
+
+  <!-- Tree view js -->
+  <script src="js/jstree.min.js"></script>
+  <script src="js/jquery.tree.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

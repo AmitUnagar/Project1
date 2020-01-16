@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dashboard</title>
+
+<!-- Responsive Meta Tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,800,900&display=swap" rel="stylesheet"> 
+    
+<!-- Font Awesome 5 CSS -->
+<link rel="stylesheet" href="css/all.min.css">
+    
+<!-- IcoFonts CSS -->
+<link rel="stylesheet" href="css/icofont.min.css">
+    
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    
+<!-- Custom Scrollbar CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+<!-- Side Menu CSS -->
+<link rel="stylesheet" href="css/sidebar-menu.css">
+    
+<!-- Select 2 CSS -->
+<link rel="stylesheet" href="css/select2.min.css">
+    
+<!-- Data Table CSS -->
+<link rel="stylesheet" href="css/jquery.dataTables.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Colours CSS -->
+<link rel="stylesheet" href="css/colours.css">
+    
+</head>
+
+<body>
+
+<div class="loader-bg">
+    <div class="loader-bar"></div>
+</div>
+
+<header>
+<div class="h-left"><a href="index.html"><img src="images/logo.png"></a><span class="nav-icon"><i class="fas fa-bars"></i></span></div>
+<div class="h-right">
+    <div class="dropdown-primary dropdown">
+        <div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span>Admin</span>
+        </div>
+        <ul class="profile-dropdown-menu dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <li><a href="#"><i class="fas fa-key"></i> Change Password</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+</div>    
+</header>
+
+<div class="side-menu-wrap mCustomScrollbar primary-bg">
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><i class="fa fa-tachometer-alt m-icon"></i><span>Dashboard</span></a></li>
+      <li><a href="case-management.html"><i class="fa fa-briefcase m-icon"></i><span>Case Management</span></a></li>
+            
+      <li><a href="#"><i class="fa fa-folder m-icon"></i><span>Administration</span><i class="fas fa-chevron-right"></i></a>
+        <ul class="sidebar-submenu">
+          <li><a href="organization-setup.html"><i class="fas fa-sitemap m-icon"></i>Organization Setup</a></li>
+          <li><a href="roles.html"><i class="fas fa-user m-icon"></i>Roles</a></li>
+          <li><a href="users.html"><i class="fas fa-users m-icon"></i>Users</a></li>
+          <li><a href="languages.html"><i class="fas fa-globe m-icon"></i>Languages</a></li>
+          <li><a href="audit-logs.html"><i class="fas fa-file-alt m-icon"></i>Audit logs</a></li>
+          <li><a href="subscription-management.html"><i class="fas fa-rss-square m-icon"></i>Subscription</a></li>
+          <li><a href="settings.html"><i class="fas fa-cog m-icon"></i>Settings</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fas fa-address-book m-icon"></i><span>Find a Dealer</span></a></li>
+      <li><a href="#"><i class="fa fa-book m-icon"></i><span>Book a Service</span></a></li>
+      <li><a href="#"><i class="fas fa-certificate m-icon"></i><span>Online Warranty</span></a></li>
+      <li><a href="#"><i class="fas fa-file-alt m-icon"></i><span>Documentation</span></a></li>
+      <li><a href="#"><i class="fas fa-bezier-curve m-icon"></i><span>UI Samples</span> <i class="fas fa-chevron-right"></i>
+        </a>
+        <ul class="sidebar-submenu">
+          <li><a href="form.html"><i class="fas fa-file-code m-icon"></i><span>Form</span></a></li>
+          <li><a href="#"><i class="fas fa-table m-icon"></i>Table<i class="fas fa-chevron-right"></i></a>
+            <ul class="sidebar-submenu">
+              <li><a href="simple-tables.html"><i class="far fa-circle m-icon"></i>Simple tables</a></li>
+              <li><a href="data-tables.html"><i class="far fa-circle m-icon"></i>Data tables</a></li>
+            </ul>
+          </li>
+          <li><a href="buttons.html"><i class="fas fa-bold m-icon"></i><span>Buttons</span></a></li>
+          <li><a href="extra.html"><i class="fas fa-layer-group m-icon"></i><span>Extra</span></a></li>
+          <li><a href="treeview.html"><i class="fas fa-folder-open m-icon"></i><span>Tree View</span></a></li>
+          <li><a href="tab-accordian.html"><i class="fas fa-dice-d6 m-icon"></i><span>Tab & Accordian</span></a></li>
+          <li><a href="modal-and-sweetalert.html"><i class="fas fa-dice-d6 m-icon"></i><span>Modal & Sweet Alert</span></a></li>
+          <li><a href="media.html"><i class="fas fa-image m-icon"></i><span>Media</span></a></li>
+              <li><a href="#"> <i class="fa fa-share m-icon"></i><span>Multilevel</span> <i class="fas fa-chevron-right"></i></a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One <i class="fas fa-chevron-right"></i></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two</a></li>
+                      <li><a href="#"><i class="far fa-circle m-icon"></i>Level Two <i class="fas fa-chevron-right"></i></a>
+                        <ul class="sidebar-submenu">
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                          <li><a href="#"><i class="far fa-circle m-icon"></i>Level Three</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#"><i class="far fa-circle m-icon"></i>Level One</a></li>
+                </ul>
+              </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+<div class="body-spacer">
+  <div class="subheader">
+    <h1>Buttons</h1>
+  </div>
+  <div class="content-wrap-outer">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+            
+          <div class="content-wrap">
+            <div class="card-header">
+              <h5>Basic Buttons</h5>
+            </div>
+            <div class="card-block">
+              <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+              <button type="button" class="btn btn-primary mb-2">Primary</button>
+              <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+              <button type="button" class="btn btn-success mb-2">Success</button>
+              <button type="button" class="btn btn-danger mb-2">Danger</button>
+              <button type="button" class="btn btn-warning mb-2">Warning</button>
+              <button type="button" class="btn btn-info mb-2">Info</button>
+              <button type="button" class="btn btn-light mb-2">Light</button>
+              <button type="button" class="btn btn-dark mb-2">Dark</button>
+              <button type="button" class="btn btn-link mb-2">Link</button>
+            </div>
+          </div>
+            
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Rounded Buttons</h5>
+            </div>
+            <div class="card-block">
+              <p>Add <code>.btn-round</code> to default button to get rounded corners.</p>
+              <button type="button" class="btn btn-primary btn-round mb-2">Primary</button>
+              <button type="button" class="btn btn-secondary btn-round mb-2">Secondary</button>
+              <button type="button" class="btn btn-success btn-round mb-2">Success</button>
+              <button type="button" class="btn btn-danger btn-round mb-2">Danger</button>
+              <button type="button" class="btn btn-warning btn-round mb-2">Warning</button>
+              <button type="button" class="btn btn-info btn-round mb-2">Info</button>
+              <button type="button" class="btn btn-light btn-round mb-2">Light</button>
+              <button type="button" class="btn btn-dark btn-round mb-2">Dark</button>
+            </div>
+          </div>
+            
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Border Buttons</h5>
+            </div>
+            <div class="card-block">
+              <p>Default button to get border.</p>
+              <button type="button" class="btn btn-outline-primary mb-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary mb-2">Secondary</button>
+            <button type="button" class="btn btn-outline-success mb-2">Success</button>
+            <button type="button" class="btn btn-outline-danger mb-2">Danger</button>
+            <button type="button" class="btn btn-outline-warning mb-2">Warning</button>
+            <button type="button" class="btn btn-outline-info mb-2">Info</button>
+            <button type="button" class="btn btn-outline-light mb-2">Light</button>
+            <button type="button" class="btn btn-outline-dark mb-2">Dark</button>
+            </div>
+          </div>
+            
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Buttons With Icon</h5>
+            </div>
+            <div class="card-block">
+              <p>Use <code>&lt;i class="fas fa-user"&gt;</code> inside button to add icon.</p>
+                
+              <div class="mb-3">
+              <button type="button" class="btn btn-primary mb-2"><i class="fas fa-user"></i> Primary</button>
+              <button type="button" class="btn btn-secondary mb-2"><i class="fas fa-eye"></i> Secondary</button>
+              <button type="button" class="btn btn-success mb-2"><i class="far fa-check-circle"></i> Success</button>
+              <button type="button" class="btn btn-danger mb-2"><i class="far fa-times-circle"></i> Danger</button>
+              <button type="button" class="btn btn-warning mb-2"><i class="fas fa-info-circle"></i> Warning</button>
+              <button type="button" class="btn btn-info mb-2"><i class="fas fa-info"></i> Info</button>
+              <button type="button" class="btn btn-light mb-2"><i class="fas fa-arrow-circle-right"></i> Light</button>
+              <button type="button" class="btn btn-dark mb-2"><i class="fas fa-sync-alt"></i> Dark</button>
+              </div>
+            
+            <button type="button" class="btn btn-outline-primary mb-2"><i class="fas fa-user"></i> Primary</button>
+            <button type="button" class="btn btn-outline-secondary mb-2"><i class="fas fa-eye"></i> Secondary</button>
+            <button type="button" class="btn btn-outline-success mb-2"><i class="far fa-check-circle"></i> Success</button>
+            <button type="button" class="btn btn-outline-danger mb-2"><i class="far fa-times-circle"></i> Danger</button>
+            <button type="button" class="btn btn-outline-warning mb-2"><i class="fas fa-info-circle"></i> Warning</button>
+            <button type="button" class="btn btn-outline-info mb-2"><i class="fas fa-info"></i> Info</button>
+            <button type="button" class="btn btn-outline-light mb-2"><i class="fas fa-arrow-circle-right"></i> Light</button>
+            <button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-sync-alt"></i> Dark</button>
+           
+            </div>
+          </div>
+            
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Icon Button</h5>
+            </div>
+            <div class="card-block">
+              <p>Use <code>&lt;i class="fas fa-user"&gt;</code> inside button to add icon.</p>
+                
+              <div class="mb-3">
+                <button type="button" class="btn btn-primary mb-2"><i class="fas fa-user"></i></button>
+                <button type="button" class="btn btn-secondary mb-2"><i class="fas fa-eye"></i></button>
+                <button type="button" class="btn btn-success mb-2"><i class="far fa-check-circle"></i></button>
+                <button type="button" class="btn btn-danger mb-2"><i class="far fa-times-circle"></i></button>
+                <button type="button" class="btn btn-warning mb-2"><i class="fas fa-info-circle"></i></button>
+                <button type="button" class="btn btn-info mb-2"><i class="fas fa-info"></i></button>
+                <button type="button" class="btn btn-light mb-2"><i class="fas fa-arrow-circle-right"></i></button>
+                <button type="button" class="btn btn-dark mb-2"><i class="fas fa-sync-alt"></i></button>
+              </div>
+            
+            <button type="button" class="btn btn-outline-primary mb-2"><i class="fas fa-user"></i></button>
+            <button type="button" class="btn btn-outline-secondary mb-2"><i class="fas fa-eye"></i></button>
+            <button type="button" class="btn btn-outline-success mb-2"><i class="far fa-check-circle"></i></button>
+            <button type="button" class="btn btn-outline-danger mb-2"><i class="far fa-times-circle"></i></button>
+            <button type="button" class="btn btn-outline-warning mb-2"><i class="fas fa-info-circle"></i></button>
+            <button type="button" class="btn btn-outline-info mb-2"><i class="fas fa-info"></i></button>
+            <button type="button" class="btn btn-outline-light mb-2"><i class="fas fa-arrow-circle-right"></i></button>
+            <button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-sync-alt"></i></button>
+           
+            </div>
+          </div>
+            
+            <div class="content-wrap">
+              <div class="card-header">
+                <h5>Basic Buttons (small-size)</h5>
+              </div>
+              <div class="card-block">
+                <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                <button type="button" class="btn btn-primary btn-sm mb-2">Primary</button>
+                <button type="button" class="btn btn-secondary btn-sm mb-2">Secondary</button>
+                <button type="button" class="btn btn-success btn-sm mb-2">Success</button>
+                <button type="button" class="btn btn-danger btn-sm mb-2">Danger</button>
+                <button type="button" class="btn btn-warning btn-sm mb-2">Warning</button>
+                <button type="button" class="btn btn-info btn-sm mb-2">Info</button>
+                <button type="button" class="btn btn-light btn-sm mb-2">Light</button>
+                <button type="button" class="btn btn-dark btn-sm mb-2">Dark</button>
+                <button type="button" class="btn btn-link btn-sm mb-2">Link</button>
+              </div>
+          </div>
+
+          <div class="content-wrap">
+                <div class="card-header">
+                  <h5>Basic Buttons (large-size)</h5>
+                </div>
+                <div class="card-block">
+                  <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                  <button type="button" class="btn btn-primary btn-lg mb-2">Primary</button>
+                  <button type="button" class="btn btn-secondary btn-lg mb-2">Secondary</button>
+                  <button type="button" class="btn btn-success btn-lg mb-2">Success</button>
+                  <button type="button" class="btn btn-danger btn-lg mb-2">Danger</button>
+                  <button type="button" class="btn btn-warning btn-lg mb-2">Warning</button>
+                  <button type="button" class="btn btn-info btn-lg mb-2">Info</button>
+                  <button type="button" class="btn btn-light btn-lg mb-2">Light</button>
+                  <button type="button" class="btn btn-dark btn-lg mb-2">Dark</button>
+                  <button type="button" class="btn btn-link btn-lg mb-2">Link</button>
+                </div>
+            </div>
+
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Buttons with dropdown</h5>
+            </div>
+            <div class="card-block">
+              <p>Checkout color states of all buttons on popover to buttons</p>
+                
+              <div class="btn-group dropdown-split-primary mb-2">
+                    <button type="button" class="btn btn-primary"><i class="icofont icofont-user-alt-3"></i>Primary</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-inverse mb-2">
+                    <button type="button" class="btn btn-secondary"><i class="icofont icofont-exchange"></i>Secondray</button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-success mb-2">
+                    <button type="button" class="btn btn-success"><i class="icofont icofont-check-circled"></i>Success</button>
+                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-info mb-2">
+                    <button type="button" class="btn btn-info"><i class="icofont icofont-info-square"></i>Info</button>
+                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-warning mb-2">
+                    <button type="button" class="btn btn-warning"><i class="icofont icofont-warning-alt"></i>Warning</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-danger mb-2">
+                    <button type="button" class="btn btn-danger"><i class="icofont icofont-eye-alt"></i>Danger</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+                <div class="btn-group dropdown-split-disabled mb-2">
+                    <button type="button" class="btn btn-disabled disabled"><i class="icofont icofont-not-allowed"></i>Disabled</button>
+                    <button type="button" class="btn btn-disabled disabled dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle primary</span>
+                    </button>
+                    <div class="dropdown-menu mb-2">
+                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-effect waves-light" href="#">Separated link</a>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div class="content-wrap">
+            <div class="card-header">
+                <h5>Buttons with dropdown</h5>
+            </div>
+            <div class="card-block">
+              <p>Checkout color states of all buttons on popover to buttons</p>
+                
+              <div class="dropdown-primary dropdown open mb-2">
+                    <button class="btn btn-primary dropdown-toggle waves-effect waves-light " type="button" id="dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Primary</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-inverse dropdown open mb-2">
+                    <button class="btn btn-secondary dropdown-toggle waves-effect waves-light " type="button" id="dropdown-7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Secondary</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-7" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-success dropdown open mb-2">
+                    <button class="btn btn-success dropdown-toggle waves-effect waves-light " type="button" id="dropdown-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Success</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-info dropdown open mb-2">
+                    <button class="btn btn-info dropdown-toggle waves-effect waves-light " type="button" id="dropdown-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Info</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-4" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-warning dropdown open mb-2">
+                    <button class="btn btn-warning dropdown-toggle waves-effect waves-light " type="button" id="dropdown-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Warning</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-5" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-danger dropdown open mb-2">
+                    <button class="btn btn-danger dropdown-toggle waves-effect waves-light " type="button" id="dropdown-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Danger</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-6" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+                <div class="dropdown-disabled dropdown open mb-2">
+                    <button class="btn btn-disabled dropdown-toggle waves-effect waves-light disabled" type="button" id="dropdown-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Disabled</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-8" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                        <a class="dropdown-item waves-light waves-effect" href="#">Action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Another action</a>
+                        <a class="dropdown-item waves-light waves-effect" href="#">Something else</a>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+            
+        </div>
+
+
+
+
+      </div>
+
+  </div>
+</div>
+
+<!--[if lt IE 10]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade
+            <br/>to any of the following web browsers to access this website.
+        </p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <i class="fab fa-chrome"></i>
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <i class="fab fa-firefox"></i>
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <i class="fab fa-opera"></i>
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <i class="fab fa-safari"></i>
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <i class="fab fa-internet-explorer"></i>
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+<![endif]--> 
+
+<!-- Main JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+<!-- Bootstrap JS -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Scrollbar JS -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- Side Menu JS -->
+<script src="js/sidebar-menu.js"></script>
+    
+<!-- Select 2 JS -->
+<script src="js/select2.full.min.js"></script>
+    
+<!-- Data Table JS -->
+<script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+    
+<!-- Chart Js -->
+<script src="js/canvasjs.min.js"></script>
+
+<!-- Custom Chart Js -->
+<script src="js/custom-chart.js"></script>
+
+<!-- Tree view JS -->
+<script src="js/jstree.min.js"></script>
+<script src="js/jquery.tree.js"></script>
+    
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+    
+</body>
+</html>
